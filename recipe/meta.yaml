@@ -1,5 +1,5 @@
 {% set name = "graphql-ws" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b4e80b6bc50c29cfa27f3d63e8a289c91d3cffb49022a7dbe96dababcf763159
+  sha256: ad711b974511b229cbc0aabff6ed6dda0706a91df8892cc9e2fce21a827e69f0
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'GraphQL websockets'
+  summary: GraphQL websockets
 
   description: |
     GraphQL websockets. Websocket server for GraphQL subscriptions.
