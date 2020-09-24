@@ -5,7 +5,7 @@ Home: https://github.com/graphql-python/graphql-ws
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: GraphQL websockets
 
@@ -117,5 +117,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@hjoliver](https://github.com/hjoliver/)
 * [@kinow](https://github.com/kinow/)
 
