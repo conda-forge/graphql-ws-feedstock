@@ -1,5 +1,5 @@
 {% set name = "graphql-ws" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ad711b974511b229cbc0aabff6ed6dda0706a91df8892cc9e2fce21a827e69f0
+  sha256: 2ad38db70f37964f54d7eb3e2ede86dbe3f2a1ed7ea0a9f9a3b8b17162a22852
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
     - pytest-runner
   run:
-    - python
+    - python >=2.7
     - graphql-core >=2.0,<3
 
 test:
